@@ -10,7 +10,7 @@ A theme for the [SDDM login manager](https://github.com/sddm/sddm).
 You can easily change how it looks in **[config](./theme.conf)**. 
 Here are some examples:
 
-**TODO:** Add some preview pics.
+![Preview](./Previews/preview.png)
 
 ### Dependencies
 
@@ -25,7 +25,7 @@ qt6-5compat qt6-declarative qt6-svg sddm noto-fonts
 1. Clone repo to `/usr/share/sddm/themes/`:
 
     ```sh
-    sudo git clone https://github.com/CashDeficiency/sddm-gl.git /usr/share/sddm/themes/
+    sudo git clone https://github.com/CashDeficiency/sddm-gl.git /usr/share/sddm/themes/sddm-gl
     ```
 
 2. Set theme in `/etc/sddm.conf`:
