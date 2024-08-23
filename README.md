@@ -1,49 +1,48 @@
-# sddm-astronaut-theme
+# sddm-gl
 
 A theme for the [SDDM login manager](https://github.com/sddm/sddm).
 
 - Screen resolution: 1080p
-- Font: Open sans
+- Font: Noto sans
 
 ### Preview
 
 You can easily change how it looks in **[config](./theme.conf)**. 
 Here are some examples:
 
-![Preview](./Previews/preview1.png)
-![Preview](./Previews/preview2.png)
-![Preview](./Previews/preview3.png)
-![Preview](./Previews/preview4.png)
+**TODO:** Add some preview pics.
 
 ### Dependencies
 
 ```sh
-qt6-5compat qt6-declarative qt6-svg sddm
+qt6-5compat qt6-declarative qt6-svg sddm noto-fonts
 ```
 > qt6-declarative replaces qt6-quickcontrols2
 > https://archlinux.org/packages/extra/x86_64/qt6-declarative/
 
 ### Install
 
-1. Clone this repository, copy fonts to `/usr/share/fonts/`:
-
-   ```sh
-   sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
-   sudo cp /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
-   ```
-
-2. Then edit `/etc/sddm.conf`, so that it looks like this:
+1. Clone repo to `/usr/share/sddm/themes/`:
 
     ```sh
-    echo "[Theme]
-    Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
+    sudo git clone https://github.com/CashDeficiency/sddm-gl.git /usr/share/sddm/themes/
+    ```
+
+2. Set theme in `/etc/sddm.conf`:
+
+    ```sh
+    echo -e "[Theme]\nCurrent=sddm-gl" | sudo tee /etc/sddm.conf
     ```
 
 ### Credits
 
 Based on the theme [`Sugar Dark for SDDM`](https://github.com/MarianArlt/sddm-sugar-dark) by **MarianArlt**.
 
+Forked from theme [`sddm-astronaut-theme`](https://github.com/Keyitdev/sddm-astronaut-theme) by **Keyitdev**.
+
 ### License
 
 Distributed under the **[GPLv3+](https://www.gnu.org/licenses/gpl-3.0.html) License**.    
+Copyright (C) 2018 Marian Arlt.
 Copyright (C) 2022-2024 Keyitdev.
+Copyright (C) 2024 CashDeficiency.
